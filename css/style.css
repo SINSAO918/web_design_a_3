@@ -1,0 +1,267 @@
+@charset "utf-8";
+*{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    color: #333;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+ul{list-style: none;}
+
+.wrap{
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    height: 700px;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.menu{
+    position: relative;
+    float:  right;
+    width: 600px;
+    height: 40px;
+    line-height: 40px;
+    top: 30px;
+    right: 30px;
+    font-size: 12px;
+    text-align: center;
+}
+.menu>ul>li{
+    width: 25%;
+    float:  left;
+    background-color: white;
+}
+.menu>ul>li:hover{
+    width: 25%;
+    background-color: rgb(73, 73, 165);
+}
+.menu>ul>li:hover h2{
+    color: white;
+}
+
+.submenu{
+    display: hide;
+    position: absolute;
+    z-index: 1;
+    width: 25%;
+}
+.submenu li{
+    font-size: 16px;
+    width: 100%;
+    background: white;
+}
+.submenu li>a{
+
+    display: block;
+    text-align: center;
+}
+.submenu li:hover{
+    background-color: rgb(99, 99, 167);
+}
+.submenu li:hover>a{
+    color:  white;
+}
+
+.slidecontainer{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    overflow: hidden;
+}
+.slide{
+    position: absolute;
+}
+.slide p{
+    position: absolute;
+    left: 0px;
+    top:0px;
+    padding: 10px 15px;
+    text-align: center;
+    background-color: white;
+    font-size: 18px;
+}
+
+.contents{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    position:  relative;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.logo{
+    position:  relative;
+    top: 34px;
+    left: 15px;
+    width: 200px;
+    height: 40px;
+}
+.logo img{
+    width: 160px;
+    height: 32px;
+}
+
+
+.tabmenu{
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+.banner{
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+.banner h2{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    padding: 10px 15px;
+    text-align: center;
+    background-color: white;
+    font-size: 18px;
+}
+.direct{
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+.direct h2{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    padding: 10px 15px;
+    text-align: center;
+    background-color: white;
+    font-size: 18px;
+}
+
+.tabmenu{
+    position:  relative;
+}
+
+.tabs li{
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    float:  left;
+    background-color:white;
+}
+
+.tabs li.on{
+    background-color: rgb(200, 215, 255);
+}
+
+.notice{
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgb(200, 215, 255);
+    font-size: 18px;
+    line-height: 2.2;
+}
+.notice li:hover{
+    text-decoration: underline;
+}
+
+
+
+
+.gallery{
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgb(200, 215, 255);
+}
+.gallery li{
+    position: relative;
+    padding-left: 10px;
+    float:  left;
+    bottom: -20px;
+}
+.gallery li img{
+    width: 120px;
+    height: 120px;
+}
+
+.panel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #33333300;
+    z-index: 100;
+    display: none;
+}
+
+.popup{
+
+    display: hide;
+    position:  absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 101;
+    width: 600px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    line-height: 2;
+    padding: 20px 50px 50px 50px;
+}
+.popup p{
+font-size: 18px;
+}
+.popup button{
+    position: absolute;
+    z-index: 102;
+    padding: 10px;
+    right: 20px;
+    bottom: 20px;
+}
+.btm{
+    width: 1000px;
+    height: 100px;
+    right: 0px;
+    float: right;
+}
+.btmmenu{
+    width: 100%;
+    height: 50%;
+}
+.copy{
+    width: 100%;
+    height: 50%;
+    /* background-color: rebeccapurple; */
+    text-align: center;
+    line-height: 50px;
+}
+.btmbtn{
+    text-align: center;
+    line-height: 50px;
+    float:  left;
+    width: 33%;
+    height: 100%;
+}
